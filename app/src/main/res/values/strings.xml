@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marvel Quotes</string>
+    <string name="mcu_quotes">MCU Quotes</string>
 </resources>
