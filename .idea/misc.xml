@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Users/Julio Huerta/AndroidStudioProjects/MarvelQuotes/app/src/main/res/font/font.xml" value="0.38981481481481484" />
         <entry key="..\:/Users/Julio Huerta/AndroidStudioProjects/MarvelQuotes/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
-        <entry key="..\:/Users/Julio Huerta/AndroidStudioProjects/MarvelQuotes/app/src/main/res/layout/home_fragment.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Julio Huerta/AndroidStudioProjects/MarvelQuotes/app/src/main/res/layout/holder_quote.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Julio Huerta/AndroidStudioProjects/MarvelQuotes/app/src/main/res/layout/home_fragment.xml" value="0.25" />
       </map>
     </option>
   </component>

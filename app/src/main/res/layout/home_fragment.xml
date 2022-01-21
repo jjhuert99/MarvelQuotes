@@ -20,7 +20,7 @@
             android:id="@+id/homeTitleText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="80dp"
             android:text="@string/mcu_quotes"
             style="@style/freagment_title" />
 
@@ -31,7 +31,48 @@
             android:layout_marginTop="20dp"
             android:paddingHorizontal="10dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="1" />
+            app:spanCount="1"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Quotes Here"
+            android:layout_marginTop="20dp"
+            android:text="@{viewModel.post.quote}"
+            style="@style/info_text"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/characterText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Quotes Here"
+            android:text="@{viewModel.post.speaker}"
+            style="@style/info_text"
+            android:paddingVertical="15dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/movieText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.post.title}"
+            tools:text="Quotes Here"
+            style="@style/info_text"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newQuoteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_quote"
+            android:fontFamily="@font/avengero"
+            android:layout_gravity="center"
+            android:layout_marginTop="350dp"
+            android:padding="16dp"/>
 
     </LinearLayout>
 </layout>
