@@ -19,4 +19,12 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRetrofitFactory() = RetrofitFactory
+
+    @Singleton
+    @Provides
+    fun provideIO() = Dispatchers.IO
+
+    @Singleton
+    @Provides
+    fun provideUI() = Dispatchers.Main
 }
