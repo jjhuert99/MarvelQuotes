@@ -1,14 +1,11 @@
-/*
-package com.example.marvelquotes
+package com.example.marvelquotes.ui.home
 
 import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.marvelquotes.network.Quote
 import com.example.marvelquotes.network.QuoteNetworkImpl
 import com.example.marvelquotes.network.ServiceResult
-import com.example.marvelquotes.ui.home.HomeViewModel
 import io.mockk.coEvery
-import io.mockk.every
 import io.mockk.mockk
 import io.mockk.unmockkAll
 import kotlinx.coroutines.Dispatchers
@@ -24,7 +21,7 @@ import org.junit.Rule
 import org.junit.Test
 
 @ExperimentalCoroutinesApi
-class HomeViewModelTest {
+class HomeViewModelTest2 {
 
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()
@@ -51,7 +48,7 @@ class HomeViewModelTest {
     }
 
     @Test
-    fun `getQuote should return a quote with the movie its from and the character who says it`() = runBlockingTest {
+    fun `getQuote`() = runBlockingTest {
         coEvery{ testRepo.getQuote() } returns createSuccessfulQuoteCall()
 
         viewModelTest.getQuotePost()
@@ -63,7 +60,7 @@ class HomeViewModelTest {
         assertEquals(
             createSuccessfulQuoteCall().data.Quote, viewModelTest.post.value?.Quote
         )
-        
+
     }
 
     private fun createSuccessfulQuoteCall(): ServiceResult.Succes<Quote> {
@@ -71,6 +68,4 @@ class HomeViewModelTest {
             mockk<Quote>(relaxed = true)
         )
     }
-
 }
-*/
