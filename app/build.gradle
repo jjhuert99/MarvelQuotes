@@ -40,13 +40,13 @@ android {
 dependencies {
 
     //MockK
-    implementation "io.mockk:mockk:1.12.0"
+    testImplementation "io.mockk:mockk:1.12.0"
     def coreTesting = "2.1.0"
-    implementation "io.mockk:mockk-agent-jvm:1.12.0"
-    implementation "androidx.arch.core:core-common:$coreTesting"
-    implementation "androidx.arch.core:core-runtime:$coreTesting"
-    implementation "androidx.arch.core:core-testing:$coreTesting"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2"
+    testImplementation "io.mockk:mockk-agent-jvm:1.12.0"
+    testImplementation "androidx.arch.core:core-common:$coreTesting"
+    testImplementation "androidx.arch.core:core-runtime:$coreTesting"
+    testImplementation "androidx.arch.core:core-testing:$coreTesting"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2"
 
 
     implementation 'androidx.core:core-ktx:1.7.0'
